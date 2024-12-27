@@ -1,0 +1,1 @@
+"use strict";(function(){angular.module("myApp",[]).controller("myCtrl",function($scope){$scope.name="Johnner Gambacica";$scope.listLength=0;$scope.checked=!1;$scope.textBox=["Enjoy!","Too much!","Please enter data first"];$scope.checkList=function(){var list=$scope.list.split(",");$scope.listLength=list.filter(item=>item).length;$scope.checked=!0}})})()

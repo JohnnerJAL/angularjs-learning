@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LunchCheck</title>
+    <script src="./utils/angular.min.js"></script>
+    <script src="./src/app.js"></script>
+    <link rel="stylesheet" href="./src/app.css">
+</head>
+<body>
+    <main ng-controller="myCtrl">
+        <h1>Hello, my name is {{name}}!</h1>
+        <p>This is an Angularjs learning project</p>
+
+        <label for="list">List comma-separated items you usually eat for lunch</label>
+        <span style="color: gray;">It does NOT consider an empty item, i.e., , , as an item towards to the count</span>
+        <br>
+        <input ng-class="listLength === 0 && checked ? 'empty-element' : 'filled-element'" id="list" type="text" ng-model="list" ng-change="checked = false">
+        <br>
+        <span class="filled-color" ng-show="listLength && checked">{{listLength > 0 && listLength <= 3 ? textBox[0] : textBox[1]}}</span>
+        <span class="empty-color" ng-show="!listLength && checked">{{textBox[2]}}</span>
+        <br>
+        <button ng-click="checkList()">Check If Too Much</button>
+    </main>
+</body>
+</html>

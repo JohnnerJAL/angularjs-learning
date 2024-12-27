@@ -1,0 +1,1 @@
+body{font-family:sans-serif;background-color:#c9c1c1}main{display:flex;justify-content:center;align-items:center;flex-direction:column;height:100vh}input:focus{outline:none}.filled-element{border:2px solid green}.empty-element{border:2px solid red}.filled-color{color:green}.empty-color{color:red}
