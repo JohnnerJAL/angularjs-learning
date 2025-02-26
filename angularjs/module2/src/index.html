@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check List</title>
+    <script src="../libs/angular.min.js"></script>
+    <script src="./app.js"></script>
+</head>
+<body>
+    <main ng-controller="mainController as main">
+        <h1>Check off list application</h1>
+        <p>{{main.title}}</p>
+        <p>{{description}}</p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr;">
+            <div ng-controller="toBuyController as bCtrl">
+                <p style="align-self: center;">To buy:</p>
+                <div ng-repeat="item in bCtrl.toBuy track by $index" style="display: grid; grid-template-columns: repeat(3, 100px); gap: 10px; align-items: center; justify-content: center;">
+                    <p>{{item.name}}</p>
+                    <p>{{item.quantity}}</p>
+                    <button ng-click="bCtrl.buy(item)" style="background-color: blue; border: none; border-radius: 8px; padding: 5px; color: white;">
+                        Buy
+                    </button>
+                </div>
+                <p ng-show="!bCtrl.toBuy.length" style="align-self: center; color: red;">
+                    Everything is bought!
+                </p>
+            </div>
+            <div ng-controller="alreadyBoughtController as abCtrl">
+                <p style="align-self: center;">Already bought:</p>
+                <div ng-repeat="item in abCtrl.alreadyBougth track by $index" style="display: grid; grid-template-columns: repeat(3, 100px); gap: 10px; justify-content: center;">
+                    <p>Bought</p>
+                    <p>{{item.name}}</p>
+                    <p>{{item.quantity}}</p>
+                </div>
+                <p ng-show="!abCtrl.alreadyBougth.length" style="align-self: center; color: red;">
+                    Nothing bought yet
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
