@@ -4,13 +4,13 @@ Este repositorio contiene varios proyectos de práctica desarrollados durante el
 
 ---
 
-## 1. Simplified Search of Menu Descriptions (App)
+## 1. Lunch Items Input Form (App)
 
 **Descripción:**  
-Aplicación de búsqueda simplificada que permite encontrar ítems del menú basándose en la descripción.
+Formulario que permite al usuario ingresar una lista separada por comas de los alimentos que usualmente consume en el almuerzo.
 
 **URL de la aplicación:**  
-[Agregar aquí la URL](#)
+[https://johnnerjal.github.io/angularjs-learning/module1](#)
 
 ---
 
@@ -20,16 +20,16 @@ Aplicación de búsqueda simplificada que permite encontrar ítems del menú bas
 Aplicación de lista de compras que permite a los usuarios "marcar" los artículos que ya han comprado o retirado.
 
 **URL de la aplicación:**  
-[Agregar aquí la URL](#)
+[https://johnnerjal.github.io/angularjs-learning/module2/src](#)
 
 ---
 
-## 3. Lunch Items Input Form (App)
+## 3. Simplified Search of Menu Descriptions (App)
 
 **Descripción:**  
-Formulario que permite al usuario ingresar una lista separada por comas de los alimentos que usualmente consume en el almuerzo.
+Aplicación de búsqueda simplificada que permite encontrar ítems del menú basándose en la descripción.
 
 **URL de la aplicación:**  
-[Agregar aquí la URL](#)
+[https://johnnerjal.github.io/angularjs-learning/module3](#)
 
 ---
