@@ -60,6 +60,7 @@
         var service = this;
 
         service.getMatchedMenuItems = function (searchTerm) {
+            console.log('searchTerm', searchTerm);
             return $http({
                 method: "GET",
                 url: "https://coursera-jhu-default-rtdb.firebaseio.com/menu_items.json"
@@ -82,6 +83,9 @@
                 console.log('foundItems', foundItems);
 
                 return foundItems;
+            }, function (error) {
+                console.error("Error fetching menu items:", error);
+                return [];
             });
         };
     }
