@@ -10,7 +10,7 @@ Este repositorio contiene varios proyectos de práctica desarrollados durante el
 Formulario que permite al usuario ingresar una lista separada por comas de los alimentos que usualmente consume en el almuerzo.
 
 **URL de la aplicación:**  
-[https://johnnerjal.github.io/angularjs-learning/module1](#)
+[https://johnnerjal.github.io/angularjs-learning/module1]
 
 ---
 
@@ -20,7 +20,7 @@ Formulario que permite al usuario ingresar una lista separada por comas de los a
 Aplicación de lista de compras que permite a los usuarios "marcar" los artículos que ya han comprado o retirado.
 
 **URL de la aplicación:**  
-[https://johnnerjal.github.io/angularjs-learning/module2/src](#)
+[https://johnnerjal.github.io/angularjs-learning/module2/src]
 
 ---
 
@@ -30,6 +30,6 @@ Aplicación de lista de compras que permite a los usuarios "marcar" los artícul
 Aplicación de búsqueda simplificada que permite encontrar ítems del menú basándose en la descripción.
 
 **URL de la aplicación:**  
-[https://johnnerjal.github.io/angularjs-learning/module3](#)
+[https://johnnerjal.github.io/angularjs-learning/module3]
 
 ---
