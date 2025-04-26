@@ -64,11 +64,12 @@
                 method: "GET",
                 url: "https://coursera-jhu-default-rtdb.firebaseio.com/menu_items.json"
             }).then(function (response) {
-                console.log('response', response);
                 var allCategories = response.data;
+                console.log('allCategories', response.data);
                 var allItems = Object.values(allCategories).reduce((acc, category) => {
                     return acc.concat(category.menu_items);
                 }, []);
+                console.log('allItems', allItems);
 
                 var foundItems = [];
 
@@ -78,6 +79,7 @@
                         foundItems.push(allItems[i]);
                     }
                 }
+                console.log('foundItems', foundItems);
 
                 return foundItems;
             });
