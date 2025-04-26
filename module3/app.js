@@ -75,8 +75,11 @@
                 var foundItems = [];
 
                 for (var i = 0; i < allItems.length; i++) {
-                    if (allItems[i].description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                        allItems[i].name.toLowerCase().includes(searchTerm.toLowerCase())) {
+                    var description = allItems[i].description || '';
+                    var name = allItems[i].name || '';
+                
+                    if (description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                        name.toLowerCase().includes(searchTerm.toLowerCase())) {
                         foundItems.push(allItems[i]);
                     }
                 }
