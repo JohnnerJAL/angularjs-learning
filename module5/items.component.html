@@ -1,0 +1,12 @@
+<div ng-if="$ctrl.items.menu_items.length > 0">
+    <a ui-sref="categories">Regresar</a>
+  <h3>{{ $ctrl.items.category.name }} Items ( {{ $ctrl.items.menu_items.length }} )</h3>
+  <ul>
+    <li ng-repeat="item in $ctrl.items.menu_items">
+      <strong>{{ item.name }}</strong> - {{ item.description }}
+    </li>
+  </ul>
+</div>
+<div ng-if="$ctrl.items.menu_items.length === 0">
+  <h3>No items found for this category</h3>
+</div>

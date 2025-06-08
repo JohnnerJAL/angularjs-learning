@@ -1,0 +1,70 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <h2>Sign Up for Newsletter {{ reg.user.firstName }}</h2>
+    <form name="regForm" novalidate>
+      <!-- First Name -->
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" name="firstName"
+               ng-model="reg.user.firstName" required>
+        <div ng-messages="regForm.firstName.$error" ng-if="regForm.firstName.$error.required && regForm.firstName.$touched">
+          <div ng-message="required" class="text-danger">First name is required</div>
+        </div>
+      </div>
+      
+      <!-- Last Name -->
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" name="lastName"
+               ng-model="reg.user.lastName" required>
+        <div ng-messages="regForm.lastName.$error" ng-if="regForm.lastName.$error.required && regForm.lastName.$touched">
+          <div ng-message="required" class="text-danger">Last name is required</div>
+        </div>
+      </div>
+      
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email"
+               ng-model="reg.user.email" required>
+        <div ng-messages="regForm.email.$error" ng-if="regForm.email.$error.required && regForm.email.$touched">
+          <div ng-message="required" class="text-danger">Email is required</div>
+          <div ng-message="email" class="text-danger">Please enter a valid email</div>
+        </div>
+      </div>
+      
+      <!-- Phone -->
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" class="form-control" id="phone" name="phone"
+               ng-model="reg.user.phone" required
+               pattern="\d{3}-\d{3}-\d{4}" placeholder="123-456-7890">
+        <div ng-messages="regForm.phone.$error" ng-if="regForm.phone.$error.required && regForm.phone.$touched">
+          <div ng-message="required" class="text-danger">Phone is required</div>
+          <div ng-message="pattern" class="text-danger">Format: 123-456-7890</div>
+        </div>
+      </div>
+      
+      <!-- Favorite Dish -->
+      <div class="form-group">
+        <label for="favoriteDish">Favorite Menu Item (Short Name)</label>
+        <input type="text" class="form-control" id="favoriteDish" name="favoriteDish"
+               ng-model="reg.user.favoriteDish" required
+               ng-blur="reg.checkMenuItem()">
+        <div ng-if="reg.invalidMenuItem" class="text-danger">
+          No such menu number exists
+        </div>
+      </div>
+      
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary"
+              ng-disabled="regForm.$invalid"
+              ng-click="reg.submit()">Submit</button>
+      
+      <!-- Success Message -->
+      <div ng-if="reg.completed" class="alert alert-success" style="margin-top: 20px;">
+        Your information has been saved!
+      </div>
+    </form>
+  </div>
+</div>

@@ -44,3 +44,13 @@ Aplicación de navegación entre rutas, mostrando el menu y los productos de cad
 
 ---
 
+## 5. Menu Restaurant - Sign Up (App)
+
+**Descripción:**  
+Aplicación de navegación entre rutas, mostrando el menu y los productos de cada categoría.
+
+**URL de la aplicación:**  
+[https://johnnerjal.github.io/angularjs-learning/module5](https://johnnerjal.github.io/angularjs-learning/module5)
+
+---
+

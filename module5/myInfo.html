@@ -1,0 +1,29 @@
+<div ng-if="info.user">
+  <h2>My Information</h2>
+  
+  <div class="row">
+    <div class="col-md-6">
+      <p><strong>First Name:</strong> {{info.user.firstName}}</p>
+      <p><strong>Last Name:</strong> {{info.user.lastName}}</p>
+      <p><strong>Email:</strong> {{info.user.email}}</p>
+      <p><strong>Phone:</strong> {{info.user.phone}}</p>
+    </div>
+    
+    <div class="col-md-6" ng-if="info.menuItem">
+      <h3>Favorite Menu Item</h3>
+      <div class="thumbnail">
+        <img ng-src="https://coursera-jhu-default-rtdb.firebaseio.com/images/{{info.menuItem.short_name}}.jpg" 
+             alt="{{info.menuItem.name}}">
+        <div class="caption">
+          <h4>{{info.menuItem.name}} ({{info.menuItem.short_name}})</h4>
+          <p>{{info.menuItem.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div ng-if="!info.user" class="alert alert-info">
+  <h2>Not Signed Up Yet</h2>
+  <p>Please <a href="#!signup">Sign Up Now!</a></p>
+</div>
