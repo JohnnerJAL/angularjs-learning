@@ -33,3 +33,14 @@ Aplicación de búsqueda simplificada que permite encontrar ítems del menú bas
 [https://johnnerjal.github.io/angularjs-learning/module3](https://johnnerjal.github.io/angularjs-learning/module3)
 
 ---
+
+## 4. Menu Restaurant (App)
+
+**Descripción:**  
+Aplicación de navegación entre rutas, mostrando el menu y los productos de cada categoría.
+
+**URL de la aplicación:**  
+[https://johnnerjal.github.io/angularjs-learning/module4](https://johnnerjal.github.io/angularjs-learning/module4)
+
+---
+
